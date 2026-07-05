@@ -3,7 +3,7 @@
 AI Systems Engineer focused on Agentic AI, LLMs, RAG systems, and Full-Stack Development.
 
 ## 🚀 About Me
-- AI Engineering Intern @ North Star Startup
+- AI Engineering Intern (Remote)
 - R&D Software Engineer @ Eka Mobility
 - Research Intern (PINNs) @ NIT Raipur
 - IEEE Conference Publication (ICMOCE 2025)
