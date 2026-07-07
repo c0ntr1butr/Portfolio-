@@ -1,16 +1,198 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Praneeth Mangala | Portfolio</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: linear-gradient(135deg, #07111f, #111827, #1e1b4b);
+      color: #f8fafc;
+      line-height: 1.7;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: radial-gradient(circle at top, #2563eb55, transparent 45%);
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: fadeDown 1s ease;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #cbd5e1;
+      margin: 15px 0 30px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .contact-links a,
+    .btn {
+      color: white;
+      text-decoration: none;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(12px);
+      transition: 0.3s ease;
+    }
+
+    .contact-links a:hover,
+    .btn:hover {
+      transform: translateY(-4px);
+      background: #2563eb;
+      box-shadow: 0 12px 35px #2563eb55;
+    }
+
+    main {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    section {
+      margin: 70px 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+      color: #93c5fd;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 22px;
+      padding: 26px;
+      margin-bottom: 22px;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      transition: 0.35s ease;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.01);
+      border-color: #38bdf8;
+      box-shadow: 0 25px 60px rgba(56,189,248,0.2);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .card-header span {
+      color: #a5b4fc;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 8px 0;
+      color: #e2e8f0;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .skills-grid div {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 18px;
+      transition: 0.3s ease;
+    }
+
+    .skills-grid div:hover {
+      transform: translateY(-6px);
+      background: rgba(37,99,235,0.25);
+    }
+
+    .publication-card .btn {
+      display: inline-block;
+      margin-top: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(35px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-35px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media(max-width: 700px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero {
+        min-height: 60vh;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
   <header class="hero">
     <h1>Praneeth Mangala</h1>
     <p>AI Systems Engineer | Agentic AI Builder | Research + Full-Stack Engineer</p>
@@ -21,12 +203,12 @@
       <a href="https://www.linkedin.com/in/praneeth2709/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://github.com/c0ntr1butr" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       <a href="https://scholar.google.com/citations?hl=en&user=O3Y1Lm0AAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+      <a href="https://medium.com/@praneethmangala123" target="_blank"><i class="fab fa-medium"></i> Medium</a>
     </div>
   </header>
 
   <main>
 
-    <!-- ABOUT -->
     <section>
       <h2>About</h2>
       <div class="card">
@@ -38,7 +220,6 @@
       </div>
     </section>
 
-    <!-- WORK EXPERIENCE -->
     <section>
       <h2>Work Experience</h2>
 
@@ -61,13 +242,12 @@
         </div>
         <ul>
           <li>Built React dashboards for real-time fleet analytics and business insights.</li>
-          <li>Processed 100K+ daily records via optimized SQL pipelines (+30% performance).</li>
-          <li>Developed ML models for bottleneck detection reducing system errors by 20%.</li>
+          <li>Processed 100K+ daily records via optimized SQL pipelines, improving performance by 30%.</li>
+          <li>Developed ML models for bottleneck detection, reducing system errors by 20%.</li>
         </ul>
       </div>
     </section>
 
-    <!-- RESEARCH -->
     <section>
       <h2>Research Experience</h2>
 
@@ -77,7 +257,7 @@
           <span>Jan 2026 - Present</span>
         </div>
         <ul>
-          <li>Developing Physics-Informed Neural Networks (PINNs) for nonlinear PDE systems.</li>
+          <li>Developing Physics-Informed Neural Networks for nonlinear PDE systems.</li>
           <li>Embedding physics constraints into neural networks for improved convergence and stability.</li>
         </ul>
       </div>
@@ -88,14 +268,13 @@
           <span>Sep 2024 - Apr 2025</span>
         </div>
         <ul>
-          <li>Built guided molecular communication system achieving BER < 5%.</li>
-          <li>Published IEEE conference paper (ICMOCE 2025).</li>
-          <li>Filed patent for molecular communication hardware system (under review).</li>
+          <li>Built guided molecular communication system achieving BER under 5%.</li>
+          <li>Published IEEE conference paper at ICMOCE 2025.</li>
+          <li>Filed patent for molecular communication hardware system.</li>
         </ul>
       </div>
     </section>
 
-    <!-- EDUCATION -->
     <section>
       <h2>Education</h2>
 
@@ -104,7 +283,7 @@
           <h3>VNIT Nagpur</h3>
           <span>Oct 2021 - May 2025</span>
         </div>
-        <p>B.Tech ECE | CGPA: 3.09/4</p>
+        <p>B.Tech Electronics and Communication Engineering | CGPA: 3.09/4</p>
       </div>
 
       <div class="card">
@@ -116,7 +295,6 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section>
       <h2>Projects</h2>
 
@@ -156,24 +334,40 @@
       </div>
     </section>
 
-    <!-- ACHIEVEMENTS -->
+    <section>
+      <h2>Publications</h2>
+
+      <div class="card publication-card">
+        <div class="card-header">
+          <h3>Guided Molecular Communication System</h3>
+          <span>ICMOCE 2025</span>
+        </div>
+        <p>
+          IEEE conference paper on molecular communication-based information transfer using controlled fluid signaling,
+          pH sensing, and relay-based molecular encoding.
+        </p>
+        <a class="btn" href="https://ieeexplore.ieee.org/abstract/document/11076959" target="_blank">
+          View IEEE Paper <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
     <section>
       <h2>Achievements & Impact</h2>
 
       <div class="card">
         <ul>
-          <li>Winner – RBI Global Hackathon (HaRBInger 2026)</li>
+          <li>Winner – RBI Global Hackathon HaRBInger 2026</li>
           <li>Global Finalist – Global Fintech Fest 2025</li>
           <li>Jury Award – HackIITK Cybersecurity Hackathon</li>
-          <li>IEEE Conference Publication (ICMOCE 2025)</li>
-          <li>Presented at IIT Delhi (NCC’25)</li>
-          <li>Filed Patent (under review) – Molecular communication system</li>
-          <li>Top 1% in JEE Mains (1.2M candidates)</li>
+          <li>IEEE Conference Publication – ICMOCE 2025</li>
+          <li>Presented at IIT Delhi NCC’25</li>
+          <li>Filed Patent – Molecular Communication System</li>
+          <li>Top 1% in JEE Mains among 1.2M candidates</li>
         </ul>
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section>
       <h2>Technical Skills</h2>
 
@@ -193,3 +387,4 @@
 
 </body>
 </html>
+```
