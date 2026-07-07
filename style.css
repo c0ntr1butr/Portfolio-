@@ -1,3 +1,4 @@
+```css
 * {
   margin: 0;
   padding: 0;
@@ -11,36 +12,54 @@ body {
   line-height: 1.7;
 }
 
+/* HERO */
 .hero {
   min-height: 75vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 80px 20px;
+  padding: 80px 8%;
   background: radial-gradient(circle at top, #2563eb55, transparent 45%);
 }
 
-/* ADD IT HERE */
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-left {
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right {
+  flex: 1.4;
+  text-align: left;
+}
+
 .profile-pic {
-  width: 160px;
-  height: 160px;
+  width: 310px;
+  height: 310px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid rgba(255,255,255,0.3);
-  box-shadow: 0 0 40px rgba(56,189,248,0.5);
-  margin-bottom: 25px;
+  border: 5px solid rgba(255,255,255,0.35);
+  box-shadow: 0 0 45px rgba(56,189,248,0.5);
   transition: 0.4s ease;
 }
 
 .profile-pic:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 60px rgba(56,189,248,0.8);
+  box-shadow: 0 0 65px rgba(56,189,248,0.8);
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+  line-height: 1.1;
   background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
   -webkit-background-clip: text;
   color: transparent;
@@ -50,14 +69,14 @@ body {
 .hero p {
   font-size: 1.25rem;
   color: #cbd5e1;
-  margin: 15px 0 30px;
+  margin: 18px 0 32px;
 }
 
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 14px;
+  justify-content: flex-start;
 }
 
 .contact-links a,
@@ -79,6 +98,7 @@ body {
   box-shadow: 0 12px 35px #2563eb55;
 }
 
+/* MAIN */
 main {
   width: min(1100px, 92%);
   margin: auto;
@@ -133,6 +153,7 @@ li {
   color: #e2e8f0;
 }
 
+/* SKILLS */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -152,17 +173,20 @@ li {
   background: rgba(37,99,235,0.25);
 }
 
+/* PUBLICATIONS */
 .publication-card .btn {
   display: inline-block;
   margin-top: 16px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 30px;
   color: #94a3b8;
 }
 
+/* ANIMATIONS */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -185,12 +209,37 @@ footer {
   }
 }
 
-@media(max-width: 700px) {
-  .hero h1 {
-    font-size: 2.8rem;
+/* RESPONSIVE */
+@media(max-width: 850px) {
+  .hero {
+    padding: 60px 6%;
   }
 
-  .hero {
-    min-height: 60vh;
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+  }
+
+  .profile-pic {
+    width: 220px;
+    height: 220px;
   }
 }
+```
