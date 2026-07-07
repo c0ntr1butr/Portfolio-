@@ -1,199 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Praneeth Mangala | Portfolio</title>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Inter, Arial, sans-serif;
-      background: linear-gradient(135deg, #07111f, #111827, #1e1b4b);
-      color: #f8fafc;
-      line-height: 1.7;
-    }
-
-    .hero {
-      min-height: 75vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 80px 20px;
-      background: radial-gradient(circle at top, #2563eb55, transparent 45%);
-    }
-
-    .hero h1 {
-      font-size: 4rem;
-      background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: fadeDown 1s ease;
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      color: #cbd5e1;
-      margin: 15px 0 30px;
-    }
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
-    }
-
-    .contact-links a,
-    .btn {
-      color: white;
-      text-decoration: none;
-      padding: 11px 18px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.18);
-      backdrop-filter: blur(12px);
-      transition: 0.3s ease;
-    }
-
-    .contact-links a:hover,
-    .btn:hover {
-      transform: translateY(-4px);
-      background: #2563eb;
-      box-shadow: 0 12px 35px #2563eb55;
-    }
-
-    main {
-      width: min(1100px, 92%);
-      margin: auto;
-    }
-
-    section {
-      margin: 70px 0;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 24px;
-      color: #93c5fd;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 22px;
-      padding: 26px;
-      margin-bottom: 22px;
-      backdrop-filter: blur(14px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-      transition: 0.35s ease;
-      animation: fadeUp 0.8s ease both;
-    }
-
-    .card:hover {
-      transform: translateY(-8px) scale(1.01);
-      border-color: #38bdf8;
-      box-shadow: 0 25px 60px rgba(56,189,248,0.2);
-    }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
-
-    .card-header span {
-      color: #a5b4fc;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin: 8px 0;
-      color: #e2e8f0;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
-    }
-
-    .skills-grid div {
-      background: rgba(255,255,255,0.09);
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 20px;
-      border-radius: 18px;
-      transition: 0.3s ease;
-    }
-
-    .skills-grid div:hover {
-      transform: translateY(-6px);
-      background: rgba(37,99,235,0.25);
-    }
-
-    .publication-card .btn {
-      display: inline-block;
-      margin-top: 16px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #94a3b8;
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(35px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeDown {
-      from {
-        opacity: 0;
-        transform: translateY(-35px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media(max-width: 700px) {
-      .hero h1 {
-        font-size: 2.8rem;
-      }
-
-      .hero {
-        min-height: 60vh;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <header class="hero">
+<header class="hero">
   <h1>Praneeth Mangala</h1>
   <p>AI Systems Engineer | Agentic AI Builder | Research + Full-Stack Engineer</p>
 
@@ -207,140 +24,135 @@
   </div>
 </header>
 
-  <main>
+<main>
 
-    <section>
-      <h2>About</h2>
-      <div class="card">
-        <p>
-          AI systems engineer focused on agentic AI, RAG pipelines, LLM orchestration, and scientific ML.
-          Experienced in building scalable AI products, automation systems, and full-stack applications across research,
-          fintech, and enterprise domains.
-        </p>
-      </div>
-    </section>
+<section>
+  <h2>About</h2>
+  <div class="card">
+    <p>
+      AI systems engineer focused on agentic AI, RAG pipelines, LLM orchestration, and scientific ML.
+      Experienced in building scalable AI products, automation systems, and full-stack applications across research,
+      fintech, and enterprise domains.
+    </p>
+  </div>
+</section>
 
-    <section>
-      <h2>Work Experience</h2>
+<section>
+  <h2>Work Experience</h2>
 
-      <div class="card">
-        <div class="card-header">
-          <h3>AI Engineering Intern - North Star Startup</h3>
-          <span>June 2026 - Present</span>
-        </div>
-        <ul>
-          <li>Built agentic AI workflows for enterprise productivity automation and communication intelligence.</li>
-          <li>Designed Meeting Transcript → Linear task automation using LLM-based structured extraction.</li>
-          <li>Developed RAG-based memory systems for persistent contextual reasoning.</li>
-        </ul>
-      </div>
+  <div class="card">
+    <div class="card-header">
+      <h3>AI Engineering Intern - North Star Startup</h3>
+      <span>June 2026 - Present</span>
+    </div>
+    <ul>
+      <li>Built agentic AI workflows for enterprise productivity automation and communication intelligence.</li>
+      <li>Designed Meeting Transcript → Linear task automation using LLM-based structured extraction.</li>
+      <li>Developed RAG-based memory systems for persistent contextual reasoning.</li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <div class="card-header">
-          <h3>R&D Software Engineer - Eka Mobility</h3>
-          <span>July 2025 - Dec 2025</span>
-        </div>
-        <ul>
-          <li>Built React dashboards for real-time fleet analytics and business insights.</li>
-          <li>Processed 100K+ daily records via optimized SQL pipelines, improving performance by 30%.</li>
-          <li>Developed ML models for bottleneck detection, reducing system errors by 20%.</li>
-        </ul>
-      </div>
-    </section>
+  <div class="card">
+    <div class="card-header">
+      <h3>R&D Software Engineer - Eka Mobility</h3>
+      <span>July 2025 - Dec 2025</span>
+    </div>
+    <ul>
+      <li>Built React dashboards for real-time fleet analytics and business insights.</li>
+      <li>Processed 100K+ daily records via optimized SQL pipelines, improving performance by 30%.</li>
+      <li>Developed ML models for bottleneck detection, reducing system errors by 20%.</li>
+    </ul>
+  </div>
+</section>
 
-    <section>
-      <h2>Research Experience</h2>
+<section>
+  <h2>Research Experience</h2>
 
-      <div class="card">
-        <div class="card-header">
-          <h3>Research Intern - NIT Raipur</h3>
-          <span>Jan 2026 - Present</span>
-        </div>
-        <ul>
-          <li>Developing Physics-Informed Neural Networks for nonlinear PDE systems.</li>
-          <li>Embedding physics constraints into neural networks for improved convergence and stability.</li>
-        </ul>
-      </div>
+  <div class="card">
+    <div class="card-header">
+      <h3>Research Intern - NIT Raipur</h3>
+      <span>Jan 2026 - Present</span>
+    </div>
+    <ul>
+      <li>Developing Physics-Informed Neural Networks for nonlinear PDE systems.</li>
+      <li>Embedding physics constraints into neural networks for improved convergence and stability.</li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <div class="card-header">
-          <h3>Final Year Thesis - VNIT Nagpur</h3>
-          <span>Sep 2024 - Apr 2025</span>
-        </div>
-        <ul>
-          <ul>
-    <li>Designed and developed a guided molecular communication hardware prototype achieving a Bit Error Rate (BER) below 5%.</li>
+  <div class="card">
+    <div class="card-header">
+      <h3>Final Year Thesis - VNIT Nagpur</h3>
+      <span>Sep 2024 - Apr 2025</span>
+    </div>
+    <ul>
+      <li>Designed and developed a guided molecular communication hardware prototype achieving a Bit Error Rate (BER) below 5%.</li>
+      <li>Successfully demonstrated the working prototype at the National Conference on Communications (NCC'25), IIT Delhi.</li>
+      <li>Presented an IEEE research paper at ICMOCE'25 hosted by IIT Bhubaneswar.</li>
+      <li>Filed a patent for the proposed molecular communication hardware system.</li>
+    </ul>
+  </div>
+</section>
 
-    <li>Successfully demonstrated the working prototype at the National Conference on Communications (NCC'25), IIT Delhi.</li>
+<section>
+  <h2>Education</h2>
 
-    <li>Presented an IEEE research paper at ICMOCE'25 hosted by IIT Bhubaneswar.</li>
+  <div class="card">
+    <div class="card-header">
+      <h3>VNIT Nagpur</h3>
+      <span>Oct 2021 - May 2025</span>
+    </div>
+    <p>B.Tech Electronics and Communication Engineering | CGPA: 3.09/4</p>
+  </div>
 
-    <li>Filed a patent for the proposed molecular communication hardware system.</li>
-</ul>
-        </ul>
-      </div>
-    </section>
+  <div class="card">
+    <div class="card-header">
+      <h3>Shastra Junior College</h3>
+      <span>2019 - 2021</span>
+    </div>
+    <p>HSC | 98.6%</p>
+  </div>
+</section>
 
-    <section>
-      <h2>Education</h2>
+<section>
+  <h2>Projects</h2>
 
-      <div class="card">
-        <div class="card-header">
-          <h3>VNIT Nagpur</h3>
-          <span>Oct 2021 - May 2025</span>
-        </div>
-        <p>B.Tech Electronics and Communication Engineering | CGPA: 3.09/4</p>
-      </div>
+  <div class="card">
+    <h3>AI Co-Founder System</h3>
+    <ul>
+      <li>Agentic AI system converting startup ideas into execution plans.</li>
+      <li>Planner, Validator, Executor multi-agent architecture.</li>
+      <li>Cognee AI + RAG memory for contextual reasoning.</li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <div class="card-header">
-          <h3>Shastra Junior College</h3>
-          <span>2019 - 2021</span>
-        </div>
-        <p>HSC | 98.6%</p>
-      </div>
-    </section>
+  <div class="card">
+    <h3>App Graph Builder</h3>
+    <ul>
+      <li>ReactFlow-based visual workflow builder for modular applications.</li>
+      <li>Zustand state graph engine for node lifecycle management.</li>
+      <li>Extensible system for agentic workflows.</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Projects</h2>
+  <div class="card">
+    <h3>StayEase PG System</h3>
+    <ul>
+      <li>Full-stack PG management system with Firebase backend.</li>
+      <li>Real-time tenant tracking, payments, and complaints.</li>
+      <li>Role-based admin architecture for scalability.</li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <h3>AI Co-Founder System</h3>
-        <ul>
-          <li>Agentic AI system converting startup ideas into execution plans.</li>
-          <li>Planner, Validator, Executor multi-agent architecture.</li>
-          <li>Cognee AI + RAG memory for contextual reasoning.</li>
-        </ul>
-      </div>
+  <div class="card">
+    <h3>PINN Oscillator Model</h3>
+    <ul>
+      <li>PyTorch-based physics-informed neural network for ODE simulation.</li>
+      <li>Integrated physics loss constraints for stable learning.</li>
+    </ul>
+  </div>
+</section>
 
-      <div class="card">
-        <h3>App Graph Builder</h3>
-        <ul>
-          <li>ReactFlow-based visual workflow builder for modular applications.</li>
-          <li>Zustand state graph engine for node lifecycle management.</li>
-          <li>Extensible system for agentic workflows.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>StayEase PG System</h3>
-        <ul>
-          <li>Full-stack PG management system with Firebase backend.</li>
-          <li>Real-time tenant tracking, payments, and complaints.</li>
-          <li>Role-based admin architecture for scalability.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>PINN Oscillator Model</h3>
-        <ul>
-          <li>PyTorch-based physics-informed neural network for ODE simulation.</li>
-          <li>Integrated physics loss constraints for stable learning.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
+<section>
   <h2>Publications</h2>
 
   <div class="card publication-card">
@@ -358,23 +170,23 @@
   </div>
 </section>
 
-    <section>
-      <h2>Achievements & Impact</h2>
+<section>
+  <h2>Achievements & Impact</h2>
 
-      <div class="card">
-        <ul>
-          <li>Winner – RBI Global Hackathon HaRBInger 2026</li>
-          <li>Global Finalist – Global Fintech Fest 2025</li>
-          <li>Jury Award – HackIITK Cybersecurity Hackathon</li>
-          <li>IEEE Conference Publication – ICMOCE 2025</li>
-          <li>Presented at IIT Delhi NCC’25</li>
-          <li>Filed Patent – Molecular Communication System</li>
-          <li>Top 1% in JEE Mains among 1.2M candidates</li>
-        </ul>
-      </div>
-    </section>
+  <div class="card">
+    <ul>
+      <li>Winner – RBI Global Hackathon HaRBInger 2026</li>
+      <li>Global Finalist – Global Fintech Fest 2025</li>
+      <li>Jury Award – HackIITK Cybersecurity Hackathon</li>
+      <li>IEEE Conference Publication – ICMOCE 2025</li>
+      <li>Presented at IIT Delhi NCC’25</li>
+      <li>Filed Patent – Molecular Communication System</li>
+      <li>Top 1% in JEE Mains among 1.2M candidates</li>
+    </ul>
+  </div>
+</section>
 
-    <section>
+<section>
   <h2>Technical Skills</h2>
 
   <div class="skills-grid">
@@ -387,12 +199,11 @@
   </div>
 </section>
 
-  </main>
+</main>
 
-  <footer>
-    <p>© 2026 Praneeth Mangala</p>
-  </footer>
+<footer>
+  <p>© 2026 Praneeth Mangala</p>
+</footer>
 
 </body>
 </html>
-```
